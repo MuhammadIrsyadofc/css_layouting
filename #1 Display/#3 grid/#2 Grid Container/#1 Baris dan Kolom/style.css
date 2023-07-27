@@ -1,0 +1,28 @@
+html, body{
+    margin: 0;
+    padding: 0;
+    background-color: #ddd;
+}
+
+.container{
+   width: 100%;
+   margin: 50px auto;
+   display: grid;
+   grid-template-columns: 1fr 2fr ;
+   /* grid-template-rows: 100px;
+   grid-auto-columns: ;
+   grid-auto-rows:;
+   grid-auto-flow: ; */
+}
+
+.item{
+    background-color: rgb(11, 213, 85);
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    
+}
+
+.item:nth-child(even){
+    background-color: magenta;
+}

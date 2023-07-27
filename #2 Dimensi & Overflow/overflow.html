@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>overflow.html</title>
+	<style type="text/css">
+		body {background-color: burlywood;}
+                /*visible*/
+		.visible {
+			width: 200px;
+			height: 200px;
+			background-color: magenta;
+		    overflow: visible;}
+                    
+		ul li a:hover {font-size: 25px;
+		               font-style : italic;
+		               color: magenta;}
+                 /*auto*/
+		.auto {
+			width: 200px;
+			height: 200px;
+			background-color: magenta;
+		    overflow: auto;}
+                  /*hidden*/
+        .hidden {
+        	width: 200px;
+			height: 200px;
+			background-color: magenta;
+		    overflow: auto;overflow: hidden;}
+		           /*scroll*/
+		.scroll	{
+			width: 200px;
+			height: 200px;
+			background-color: magenta;
+			overflow: scroll;
+		}
+
+	</style>
+</head>
+<body>
+	<h1>overvlow adalah properti yang di gunakan untuk mengatur prilaku elemen yang keluar dari parent nya</h1>
+	<h2>overflow ada 4 value</h2>
+
+<ul type="circle">
+	<li><a href="#visible">visible/default nya</a></li>
+	<li><a href="#auto">auto</a></li>
+	<li><a href="#hidden">hidden</a></li>
+	<li><a href="#scroll">scroll</a></li>
+</ul>
+
+
+<a id="visible"><b>visible</b></a>
+<div class="visible">
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+</div>
+<br><br><br><br><br><br><br>
+
+<a id="auto"><b>auto</b></a>
+<br>
+<div class="auto">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+<br>
+
+<a id="hidden"><b>hidden</b></a>
+<br>
+<div class="hidden">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+</div>
+<br>
+
+<a id="scroll"><b>scroll</b></a>
+<div class="scroll">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+</div>
+</body>
+</html>

@@ -1,0 +1,141 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+body{
+    background-color: #ddd;
+}
+.container{
+    display: grid;
+    width: 100vw;
+    height: 100vw;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows:0.1fr 1.5fr 0.8fr 80px;
+    grid-template-areas: 
+    'nav nav nav nav'
+    'main main main main'
+    'sidebar content1 content2 content3'
+    'sidebar footer footer footer'
+    ;
+    gap: 5px;
+}
+.nav{
+    grid-area: nav;
+    background-color: aquamarine;
+    opacity: 0.7.5;
+    position: fixed;
+    left: 0;
+    right: 0;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.nav ul{
+    display: flex;
+    justify-content: space-between;
+    width: 40%;
+    margin-right: 15px;
+    line-height: 50px;
+}
+.sidebar{
+    grid-area: sidebar;
+    padding: 20px;
+    background-color: aquamarine;
+    opacity: 0.7.5;
+}
+.sidebar ul li{
+    list-style: none;
+}
+.main{
+    grid-area: main;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    max-width: 95vw;
+    width: calc(100vw - 2rem);
+    margin-top: 50px;
+}
+
+.main .sisi-kiri{
+    width: 500px;
+    height: 500px;
+    margin-top: 150px;
+    margin-left: 50px ;
+    margin-right: 100px;
+}
+.main .main-kanan{
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+}
+
+.content1{
+    grid-area: content1;
+    padding: 5px;
+    background-color: aquamarine;
+    opacity: 0.7.5;
+    overflow: auto;
+}
+.content2{
+    grid-area: content2;
+    padding: 5px;
+    background-color: aquamarine;
+    opacity: 0.7.5;
+}
+.content3{
+    grid-area: content3;
+    padding: 5px;
+    background-color: aquamarine;
+    opacity: 0.7.5;
+}
+.footer{
+    grid-area: footer;
+    text-align: center;
+    list-style: none;
+    line-height: 80px;
+    background-color: aquamarine;
+    opacity: 0.7.5;
+}
+
+
+/* responsive breakpoint*/
+/* for tablet */
+@media only screen and (max-width:768px) {
+    .container{
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.5fr 1.5fr 1fr 1fr 1fr 1fr 50px;
+        grid-template-areas: 
+        'nav'
+        'main'
+        'content1' 
+        'content2' 
+        'content3'
+        'sidebar'
+        'footer'
+        ;
+
+        gap: 5px;
+    }
+    .footer{
+        line-height: 50px;
+    }
+    .sidebar{
+        border-radius: 10px;
+    }
+    .sidebar ul li{
+      display: inline-block;
+    }
+    .content1{
+        opacity: 0.7.5;
+        overflow: auto;
+        height: 200px;
+    }
+}
+
+

@@ -1,0 +1,103 @@
+html,body{
+    margin: 0;
+    padding: 0;
+    background-color: #ddd;
+}
+
+a{text-decoration: none;}
+
+
+
+.container{
+    border: 2px solid black;
+    width: 90%;
+    margin: 50px auto;
+    padding: 5px;
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+    /* grid-template-rows: repeat(9, 2fr) min-content; */
+
+    grid-template-areas: 
+    "item-1 item-1"
+    "item-2 item-3"
+    "item-4 item-4"
+    "item-5 item-6"
+    "item-7 item-8"
+    "item-9 item-9" ;
+     column-gap: 10px;
+     row-gap: 10px;
+     box-sizing: border-box;
+}
+
+.item-1{
+    width: 100%;
+    grid-area: item-1;
+    font-size: 2rem;
+    background-color: lightblue;
+    text-align: center;
+    line-height: 200px;
+}
+
+.item-2{
+    grid-area: item-2;
+    font-size: 2rem;
+    background-color: rgb(6, 226, 149);
+    text-align: center;
+    line-height: 200px;
+}
+
+.item-3{
+    grid-area: item-3;
+    font-size: 2rem;
+    background-color: rgb(18, 14, 240);
+    text-align: center;
+    line-height: 200px;
+}
+
+.item-4{
+    line-height: 200px;
+    grid-area: item-4;
+    font-size: 2rem;
+    background-color: rgb(121, 234, 17);
+    text-align: center;
+}
+
+.item-5{
+    grid-area: item-5 ;
+    font-size: 2rem;
+    background-color: rgb(32, 146, 184);
+    text-align: center;
+    line-height: 200px;
+}
+
+.item-6{
+    grid-area: item-6;
+    font-size: 2rem;
+    background-color: rgb(155, 53, 96);
+    text-align: center;
+    line-height: 200px;
+}
+.item-7{
+    grid-area: item-7;
+    font-size: 2rem;
+    background-color: rgb(81, 126, 141);
+    text-align: center;
+    line-height: 200px;
+}
+.item-8{
+    grid-area: item-8;
+    font-size: 2rem;
+    background-color: rgb(0, 99, 129);
+    text-align: center;
+    line-height: 200px;
+}
+.item-9{
+    grid-area: item-9;
+    font-size: 2rem;
+    background-color: rgb(206, 126, 208);
+    text-align: center;
+    line-height: 200px;
+}
+
+

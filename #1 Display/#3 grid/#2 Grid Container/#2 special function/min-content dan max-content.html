@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>min  content & max-content</title>
+<style>
+.container.min-content{
+    width: 60%;
+    margin: 100px auto;
+    background-color: #333;
+    display: grid;
+    grid-template-columns: 1fr min-content 1fr;
+}
+
+.item1{
+    background-color: #eaea;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.item1:nth-child(even){
+    background-color: rgba(23, 187, 126, 0.667);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+</style>
+
+</head>
+<body>
+<div class="container min-content">
+    <div class="item1">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente repellat totam, explicabo saepe neque libero eum porro! Accusamus, facere cumque.</div>
+    <div class="item1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, voluptatem.</div>
+    <div class="item1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro tempora maiores vel quis, a quam adipisci enim aspernatur illo iure nam quibusdam perspiciatis voluptate. Quam sit non quod aliquam quas.</div>
+    <div class="item1">4</div>
+    <div class="item1">5</div>
+    <div class="item1">6</div>
+    <div class="item1">7</div>
+    <div class="item1">8</div>
+    <div class="item1">9</div>
+</div>
+    <br><br><br><br><br><br>
+<div class="container dua">
+    <div class="item2">1</div>
+    <div class="item2">2</div>
+    <div class="item2">3</div>
+    <div class="item2">4</div>
+    <div class="item2">5</div>
+    <div class="item2">6</div>
+    <div class="item2">7</div>
+    <div class="item2">8</div>
+    <div class="item2">9</div>
+</div>
+
+
+</body>
+</html>

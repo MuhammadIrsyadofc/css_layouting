@@ -1,0 +1,122 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+  overflow-x: hidden;
+}
+nav{
+ display: flex;
+ flex-direction: row;
+ justify-content: space-around;
+ height: 50px;
+ background-color: aquamarine;
+ align-items: center;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: row;
+  width: 40%;
+  justify-content: space-around;
+  list-style: none;
+}
+nav ul li a{
+  text-decoration: none;
+}
+nav ul li a:hover{
+  border-bottom: 2px solid blue;
+}
+
+
+
+/* hamburger menu */
+.menu-toggle{
+  display: none;
+  flex-direction: column;
+  height: 20px;
+  justify-content: space-between;
+  position: relative;
+}
+.menu-toggle input{
+  position: absolute;
+  width: 40px;
+  height: 28px;
+  opacity: 0;
+  top: -3px;
+  left: -6px;
+  cursor: pointer;
+  z-index: 2;
+ 
+}
+.menu-toggle span{
+  display: block;
+  width: 28px;
+  height: 3px;
+  border-radius: 3px;
+  background-color: blue;
+  transition: all 0.5s;
+}
+
+/* hamburger menu animation */
+.menu-toggle span:nth-child(2)
+{
+transform-origin: 0 0;
+}
+.menu-toggle span:last-child
+{
+transform-origin: 0 100%;
+}
+
+.menu-toggle input:checked ~ span:nth-child(2)
+{
+  transform: rotate(45deg) translate(-1px, -1px) ;
+  background-color: #a0f600;
+}
+.menu-toggle input:checked ~ span:nth-child(3)
+{
+  transform: scale(0);
+  opacity: 0;
+}
+
+.menu-toggle input:checked ~ span:nth-child(4)
+{
+  transform: rotate(-45deg) translate(-1px, 0) ;
+  background-color: #a0f600;
+}
+
+
+
+
+/* responsive breakpoint */
+
+/* tablet */
+ @media only screen and (max-width:768px){
+  nav ul{
+    width: 60%;
+  }
+} 
+  
+
+/* handphone */
+@media only screen and (max-width:576px){
+  .menu-toggle{
+    display: flex;
+  }
+  nav ul{
+    position: absolute;
+    top: 0;
+    width: 80%;
+    height: 100vh;
+    flex-direction: column;
+    background-color: aquamarine;
+    justify-content: space-evenly;
+    align-items: center;
+    z-index: -1;
+    transform: translateX(100%);
+    transition: all 1s;
+  }
+  
+}
+

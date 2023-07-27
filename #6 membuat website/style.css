@@ -1,0 +1,117 @@
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+
+/**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+.cf {
+    *zoom: 1;
+}
+/* style.css */
+
+body {
+    font-family:Arial, Helvetica, sans-serif;
+	background-image: url(patternblue.jpg);
+	color: #333;}
+
+                               /* body halaman */
+						.container {  
+						     width: 960px;
+							 margin: auto;
+							 background-color: palegoldenrod;}
+                                   
+							.header {padding: 20px;}
+                                         
+							  /* judul */
+                                   .header .judul {
+									font-size: 40px;
+									font-weight: bold;
+									text-align: center;
+									color: magenta;}
+						     /* edit display header ke inline block */
+								   .header ul li {
+										display: inline-block;
+										margin-top: 20px;
+										margin-right: 10px;
+										text-indent: 75px;}
+	
+							 /* decoration link */
+									.header a {
+									text-decoration: none;
+									color: blue;
+									padding: 5px;}
+																				
+									.header a:hover {
+									color: magenta;}
+
+      
+        /* gambar dalam container */
+		.gambar {
+			height: 450px;
+			background-image: url(laptop.jpg);
+			background-size:cover;
+			background-position: 0 -80px; 
+			border-top: 5px solid blue; 
+			border-bottom:5px solid blue ;}
+
+
+			.main {
+				width: 600px;
+				padding: 25px ;
+				box-sizing: border-box;
+				float: left;
+			}
+			
+			.main h3 {
+				font-size: 28px;
+				font-weight: bold;}
+				
+			
+			.main .penulis {
+				font-size: 15px;
+				margin-top: 10px;}
+			
+			.main .penulis a{
+				color: salmon;
+				text-decoration: underline;}
+			
+			.main p {
+				margin-bottom: 20px;
+				padding: 6px;}
+			
+
+                 /* sidebar */
+				 
+		    .sidebar {
+				width: 300px;
+				float: right;
+				padding: 25px;
+			} 
+			.sidebar h3 {
+				font-weight: bold;
+				color: magenta;
+				font-size: 25px;
+				margin: auto;
+			}
+			.sidebar img {
+				padding: 25px;
+				float: left;
+			}
+
+
+
+			.footer {background-color: black;}
+			.footer .copy {
+				color: #eaeaea;
+				text-align: center;
+				font-size: 15px;
+				
+			}

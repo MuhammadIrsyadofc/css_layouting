@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flexsibel box</title>
+<style>
+.container
+{width: 490px;
+    height: 200px;
+ border: 5px solid blue;
+ margin: 200px auto;
+ padding: 5px;
+ 
+  display: flex;
+  flex-direction: row; 
+  flex-wrap: wrap;
+  /* justify-content: space-evenly ;     */
+  /* align-content: space-between;        */
+   /* align-items: stretch ;     */
+  
+}
+
+.container div{
+    width: 100px;
+    height: 100px;
+    margin: 1px;
+}
+.container div.kotak2{flex-grow: center;}
+
+
+.kotak1 {
+    background-color: magenta;
+}
+.kotak2 {
+    background-color: magenta;
+
+}
+.kotak3 {
+    background-color: magenta;
+}
+.kotak4 {
+    background-color: magenta;
+
+}
+
+/* .kotak1{order:4;}
+.kotak2{order:3;}
+.kotak3{order:1;}
+.kotak4{order:2;} */
+
+
+</style>
+</head>
+<body>
+
+<div class="container"> 
+    <div class="kotak1">1</div>
+    <div class="kotak2">2</div>
+    <div class="kotak3">3</div>
+    <div class="kotak4">4</div>
+    
+</div> 
+
+</body>
+</html>

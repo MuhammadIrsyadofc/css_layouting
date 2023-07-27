@@ -1,0 +1,84 @@
+*{
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+}
+/* navbar */
+nav{
+ display: flex;
+ background-color: rgb(22, 217, 152);
+ justify-content: space-evenly;
+ height: 50px;
+ align-items: center;
+ color: beige;
+}
+nav ul{
+    display: flex;
+    list-style: none;
+    width: 40%;
+    justify-content: space-between;
+}
+nav ul li a{
+    color: beige;
+    text-decoration: none;
+}
+nav ul li a:hover{
+    border-bottom: 2px solid blue;
+}    
+
+
+/* hamburger menu */
+.menu-toogle{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 20px;
+}
+
+.menu-toogle span{
+    display: block;
+    width: 28px;
+    height: 3px;
+    background-color: rgb(213, 213, 56);
+    border-radius: 3px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* responsive brekpoint */
+
+/* ukuran tablet */
+@media only screen and (max-width:768px)
+{
+    nav ul{
+        width: 50%;
+    }
+}
+
+/* ukuran handphone */
+@media only screen and (max-width:576px)
+{
+    nav ul{
+        display: none;
+    }
+}
+
+
+
+
+
+
+
+
+
+/* tutup navbar */
